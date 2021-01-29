@@ -767,7 +767,6 @@ footer .footer__container .text span {
   border: 0;
   border-bottom: 1px solid var(--tertiary);
   border-radius: 0px;
-  -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
