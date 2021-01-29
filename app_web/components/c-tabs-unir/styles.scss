@@ -17,10 +17,13 @@
     color: var(--titles-bg);
     text-transform: uppercase;
     &:hover {
-      background-color: #ddd;
+      opacity: 0.5;
     }
     &.active {
       background-color: var(--secondary);
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

@@ -29,6 +29,3 @@ html body .subHeader {
   background-color: var(--third);
   margin-bottom: 17px;
 }
-html body .app__container {
-  min-height: 600px;
-}

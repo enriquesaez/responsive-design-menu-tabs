@@ -6474,10 +6474,13 @@ button#myBtnattachempty {
   text-transform: uppercase;
 }
 .c-tabs-unir button:hover {
-  background-color: #ddd;
+  opacity: 0.5;
 }
 .c-tabs-unir button.active {
   background-color: var(--secondary);
+}
+.c-tabs-unir button.active:hover {
+  opacity: 1;
 }
 
 .tabcontent {
