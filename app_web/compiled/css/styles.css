@@ -14,7 +14,7 @@ html body .subHeader__container,
 html body .app__container,
 html body .footer__container {
   margin: 0 auto;
-  width: 1144px;
+  width: 1280px;
 }
 html body .separate--vertical {
   border-left: 1px solid var(--sixth);
@@ -24,7 +24,7 @@ html body .hr-table-customer {
 }
 html body header {
   height: 72px;
-  background-color: var(--second);
+  background-color: var(--secondary);
 }
 html body .subHeader {
   background-color: var(--third);

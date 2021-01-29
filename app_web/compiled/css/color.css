@@ -1,4 +1,11 @@
 :root {
+  --primary:#0098cd;
+  --secondary:#00617a;
+  --light-grey:#363636;
+  --titles:#00617a;
+  --texts:#555555;
+  --titles-bg:#ffffff;
+  --texts-bg: rgba(255,255,255,0.8);
   --first: #ffffff;
   --second: #072146;
   --third: #f4f4f4;
