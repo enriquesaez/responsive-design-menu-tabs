@@ -1,0 +1,35 @@
+.c-tabs-unir
+    button#defaultOpen.tablinks(onclick="openContent(event, 'metodologia')") Metodología Unir
+    button.tablinks(onclick="openContent(event, 'clases')") 01. clases en vivo
+    button.tablinks(onclick="openContent(event, 'tutor')") 02. Tutor personal
+    button.tablinks(onclick="openContent(event, 'recursos')") 03. recursos
+#metodologia.tabcontent
+    h3 Metodología Unir
+    p Metodología Unir
+#clases.tabcontent
+    h3 01. clases en vivo
+    p 01. clases en vivo
+#tutor.tabcontent
+    h3 02. Tutor personal
+    p 02. Tutor personal
+#recursos.tabcontent
+    h3 03. recursos
+    p 03. recursos    
+
+script.
+    function openContent(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+script.
+    // Active element on click by default:
+    document.getElementById("defaultOpen").click();    

@@ -3,21 +3,5 @@ html(lang='en')
   head
     include components/head-content/head-content.pug
   body
-    header        
-      section.app__container      
-        .c-tab-menu-traceability
-          div
-            button
-              span Descuento
-          div
-            button
-              i.ico-disabled.ico-path-3-1
-              span Errores
-          div.traceability--active
-            button
-              span Activity Log
-
-include js/c-select-js.pug
-include js/c-dropdown-js.pug
-include js/c-accordion-js.pug
-//-Test
+    section.app__container
+      include components/c-tabs-unir/c-tabs-unir.pug
