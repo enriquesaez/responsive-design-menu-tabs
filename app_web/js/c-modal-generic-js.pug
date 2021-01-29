@@ -1,0 +1,15 @@
+script.
+    var modalgeneric = document.getElementById("myModalgeneric");
+    var btngeneric = document.getElementById("myBtngeneric");
+    var spangeneric = document.getElementsByClassName("closegeneric")[0];
+    btngeneric.onclick = function() {
+        modalgeneric.style.display = "block";
+    }
+    spangeneric.onclick = function() {
+        modalgeneric.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modalgeneric) {
+            modalgeneric.style.display = "none";
+        }
+    }
