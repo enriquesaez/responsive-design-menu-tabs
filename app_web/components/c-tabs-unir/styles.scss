@@ -1,30 +1,35 @@
 .c-tabs-unir {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  height: 60px;
+  background-color: var(--primary);
+  display: flex;
   button {
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 0;
+    height: 60px;
+    width: 320px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--titles-bg);
+    text-transform: uppercase;
     &:hover {
       background-color: #ddd;
     }
     &.active {
-      background-color: #ccc;
+      background-color: var(--secondary);
     }
   }
 }
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  background-color: var(--secondary);
   border-top: none;
-  animation: fadeEffect 1.3s;
+  animation: fadeEffect 1s;
 }
 @keyframes fadeEffect {
   from {
