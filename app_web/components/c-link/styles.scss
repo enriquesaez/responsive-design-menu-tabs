@@ -10,16 +10,16 @@
   -webkit-align-items: center;
   cursor: pointer;
   outline: none;
-  color: var(--fifth);
-  
+  color: var(--titles-bg);
   i {
     margin-right: 8px;
   }
 
   label {
     font-family: "Benton Sans Medium BBVA";
-    font-size: 13px;
-    line-height: 24px;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
     cursor: pointer;
   }
 }

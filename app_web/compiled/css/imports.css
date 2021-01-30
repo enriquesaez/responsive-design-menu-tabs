@@ -534,15 +534,16 @@ i {
   -webkit-align-items: center;
   cursor: pointer;
   outline: none;
-  color: var(--fifth);
+  color: var(--titles-bg);
 }
 .c-link i {
   margin-right: 8px;
 }
 .c-link label {
   font-family: "Benton Sans Medium BBVA";
-  font-size: 13px;
-  line-height: 24px;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -6486,7 +6487,7 @@ button#myBtnattachempty {
 
 .tabslot {
   display: none;
-  padding: 6px 12px;
+  padding: 45px 0 0 0;
   background-color: var(--secondary);
   border-top: none;
   animation: fadeEffect 1s;
@@ -6514,8 +6515,33 @@ button#myBtnattachempty {
 }
 .tabslot__content--methodology {
   height: auto;
-  color: white;
   min-height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+.tabslot__content--methodology .tab-copy {
+  padding: 90px 0 0 80px;
+}
+.tabslot__content--methodology .tab-copy h1 {
+  font-family: "Unit OT", sans-serif;
+  font-size: 40px;
+  line-height: 46px;
+  color: var(--titles-bg);
+  margin: 10px 0 40px 0;
+}
+.tabslot__content--methodology .tab-copy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--texts-bg);
+}
+.tabslot__content--methodology .tab-media {
+  display: flex;
+  display: -webkit-flex;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -6525,7 +6551,6 @@ button#myBtnattachempty {
 }
 .tabslot__content--classes {
   height: auto;
-  color: white;
   min-height: 300px;
 }
 
@@ -6536,7 +6561,6 @@ button#myBtnattachempty {
 }
 .tabslot__content--tutor {
   height: auto;
-  color: white;
   min-height: 300px;
 }
 
@@ -6547,7 +6571,6 @@ button#myBtnattachempty {
 }
 .tabslot__content--resources {
   height: auto;
-  color: white;
   min-height: 300px;
 }
 
