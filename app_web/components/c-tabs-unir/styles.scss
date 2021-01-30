@@ -45,8 +45,16 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .app__container {
-    opacity: 0;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .c-tabs-unir {
+    button {
+      width: 100%;
+      &.active {
+        background-color: var(--secondary);
+      }
+    }
   }
+  .tabcontent {
+    display: none;
+  }    
 }

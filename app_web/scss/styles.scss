@@ -3,34 +3,42 @@
 @charset "UTF-8";
 html {
   body {
-    &.background--third {
-      background-color: var(--third);
-    }
-    font-family: "Benton Sans Book BBVA", Helvetica, Arial, sans-serif;
-    .container-width_100 {
-      padding-top: 20px;
-      width: 100%;
-    }
-    .header__container,
-    .subHeader__container,
     .app__container {
       margin: 0 auto;
       width: 1280px;
     }
-    .separate--vertical {
-      border-left: 1px solid var(--sixth);
-    }
+  }
+}
 
-    .hr-table-customer {
-      border-top: 2px solid #d3d3d3;
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    body {
+      .app__container {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
-    header {
-      height: 72px;
-      background-color: var(--primary);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    body {
+      .app__container {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
-    .subHeader {
-      background-color: var(--third);
-      margin-bottom: 17px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  html {
+    body {
+      .app__container {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
   }
 }
