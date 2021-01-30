@@ -1,7 +1,7 @@
 /* Tabs structure styles */
 html body .app__container {
   margin: 0 auto;
-  width: 1280px;
+  width: 1263px;
 }
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {

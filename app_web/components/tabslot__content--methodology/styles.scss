@@ -9,30 +9,52 @@
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   .tab-copy {
-    padding: 90px 0 0 80px;
+    padding: 90px 90px 0 90px;
     h1 {
       font-family: 'Unit OT', sans-serif;
       font-size: 40px;
-      line-height: 46px;
+      line-height: 46px;      
       color: var(--titles-bg);
-      margin: 10px 0 40px 0;
+      margin: 60px 0 30px 0;
     }
     p {
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       line-height: 26px;      
       color: var(--texts-bg);
+      margin-bottom: 26px;
     }    
   }
   .tab-media {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    display: contents;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .tabslot__content--methodology {
-    min-height: 300px;
-  }   
+    .tab-copy {
+      padding: 90px 34px 0 34px;
+      h1 {
+        font-family: 'Unit OT', sans-serif;
+        font-size: 40px;
+        line-height: 46px;      
+        color: var(--titles-bg);
+        margin: 60px 0 30px 0;
+      }
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 26px;      
+        color: var(--texts-bg);
+        margin-bottom: 26px;
+      }    
+    }
+    .tab-media {
+      display: unset;
+      overflow: hidden;
+      img {
+        
+      }
+    }
+  }
 }
