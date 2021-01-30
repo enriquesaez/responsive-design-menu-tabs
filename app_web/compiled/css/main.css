@@ -1,4 +1,5 @@
-/* HELPERS */
+/* Import layout assets */
+/* Layout helpers */
 .padding_5 {
   padding: 5px;
 }
@@ -795,7 +796,7 @@
   border-bottom: none !important;
 }
 
-/* CONTAINER GRID SYSTEM */
+/* Grid Sistem */
 .row {
   display: flex;
   display: -webkit-flex;

@@ -21,41 +21,45 @@
         <button class="tablinks" onclick="openContent(event, 'tutor')">02. Tutor personal</button>
         <button class="tablinks" onclick="openContent(event, 'recursos')">03. recursos</button>
       </div>
-      <div class="tabcontent" id="metodologia">
-        <h3>Metodología Unir</h3>
-        <p>Metodología Unir</p>
+      <div class="tabslot" id="metodologia">
+        <div class="tabslot__content--methodology">
+          <h1>Methodology</h1>
+        </div>
       </div>
-      <div class="tabcontent" id="clases">
-        <h3>01. clases en vivo</h3>
-        <p>01. clases en vivo</p>
+      <div class="tabslot" id="clases">
+        <div class="tabslot__content--classes">
+          <h1>Clases</h1>
+        </div>
       </div>
-      <div class="tabcontent" id="tutor">
-        <h3>02. Tutor personal</h3>
-        <p>02. Tutor personal</p>
+      <div class="tabslot" id="tutor">
+        <div class="tabslot__content--tutor">
+          <h1>Tutor</h1>
+        </div>
       </div>
-      <div class="tabcontent" id="recursos">
-        <h3>03. recursos</h3>
-        <p>03. recursos    </p>
+      <div class="tabslot" id="recursos">
+        <div class="tabslot__content--resources">
+          <h1>Recursos</h1>
+        </div>
       </div>
-      <script>
-        function openContent(evt, elementName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(elementName).style.display = "block";
-        evt.currentTarget.className += " active";
-        }
-      </script>
-      <script>
-        // Active element on click by default:
-        document.getElementById("defaultOpen").click();    
-      </script>
     </section>
+    <script>
+      function openContent(evt, elementName) {
+      var i, tabslot, tablinks;
+      tabslot = document.getElementsByClassName("tabslot");
+      for (i = 0; i < tabslot.length; i++) {
+      tabslot[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(elementName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+    </script>
+    <script>
+      // Active element on click by default:
+      document.getElementById("defaultOpen").click();
+    </script>
   </body>
 </html>

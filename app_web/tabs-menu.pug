@@ -5,3 +5,20 @@ html(lang='en')
   body
     section.app__container
       include components/c-tabs-unir/c-tabs-unir.pug
+    script.
+        function openContent(evt, elementName) {
+        var i, tabslot, tablinks;
+        tabslot = document.getElementsByClassName("tabslot");
+        for (i = 0; i < tabslot.length; i++) {
+        tabslot[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(elementName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    script.
+        // Active element on click by default:
+        document.getElementById("defaultOpen").click();

@@ -1,0 +1,11 @@
+.tabslot__content--classes {
+  height: auto;
+  color: white;
+  min-height: 300px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tabslot__content--classes {
+    min-height: 300px;
+  }   
+}

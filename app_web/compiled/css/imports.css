@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* CSS STYLES OF WEB COMPONENTS */
+/* Imports web components styles */
 /* BBVA ICONS */
 /* WEBFONTS VARIABLES */
 @font-face {
@@ -6484,7 +6484,7 @@ button#myBtnattachempty {
   opacity: 1;
 }
 
-.tabcontent {
+.tabslot {
   display: none;
   padding: 6px 12px;
   background-color: var(--secondary);
@@ -6508,7 +6508,51 @@ button#myBtnattachempty {
     background-color: var(--secondary);
   }
 
-  .tabcontent {
+  .tabslot {
     display: none;
+  }
+}
+.tabslot__content--methodology {
+  height: auto;
+  color: white;
+  min-height: 300px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tabslot__content--methodology {
+    min-height: 300px;
+  }
+}
+.tabslot__content--classes {
+  height: auto;
+  color: white;
+  min-height: 300px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tabslot__content--classes {
+    min-height: 300px;
+  }
+}
+.tabslot__content--tutor {
+  height: auto;
+  color: white;
+  min-height: 300px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tabslot__content--tutor {
+    min-height: 300px;
+  }
+}
+.tabslot__content--resources {
+  height: auto;
+  color: white;
+  min-height: 300px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .tabslot__content--resources {
+    min-height: 300px;
   }
 }

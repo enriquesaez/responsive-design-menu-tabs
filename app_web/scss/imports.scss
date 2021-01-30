@@ -1,4 +1,4 @@
-/* CSS STYLES OF WEB COMPONENTS */
+/* Imports web components styles */
 
 @import "ico-styles.scss";
 @import "../components/c-title/styles.scss";
@@ -73,3 +73,7 @@
 
 // UNIR IMPORTS:
 @import "../components/c-tabs-unir/styles.scss";
+@import "../components/tabslot__content--methodology/styles.scss";
+@import "../components/tabslot__content--classes/styles.scss";
+@import "../components/tabslot__content--tutor/styles.scss";
+@import "../components/tabslot__content--resources/styles.scss";
