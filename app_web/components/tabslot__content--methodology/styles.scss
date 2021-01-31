@@ -27,6 +27,7 @@
   }
   .tab-media {
     display: contents;
+    overflow: hidden;
   }
 }
 
@@ -34,27 +35,16 @@
   .tabslot__content--methodology {
     .tab-copy {
       padding: 90px 34px 0 34px;
-      h1 {
-        font-family: 'Unit OT', sans-serif;
-        font-size: 40px;
-        line-height: 46px;      
-        color: var(--titles-bg);
-        margin: 60px 0 30px 0;
-      }
-      p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        line-height: 26px;      
-        color: var(--texts-bg);
-        margin-bottom: 26px;
-      }    
+      width: 57%;   
     }
     .tab-media {
       display: unset;
-      overflow: hidden;
+      width: 43%;
       img {
-        
+        position: relative;
+        top: 3px;
       }
     }
   }
 }
+
