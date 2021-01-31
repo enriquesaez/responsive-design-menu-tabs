@@ -499,9 +499,40 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
 }
-.tabslot__content--tutor .tab-testimonial .tab-testimonial__container figure {
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div {
   width: 430px;
   height: auto;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure i {
+  color: var(--primary);
+  font-size: 22px;
+  z-index: 1;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure img {
+  width: 91px;
+  height: 91px;
+  border-radius: 50%;
+  position: relative;
+  top: -18px;
+  margin-bottom: 30px;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure blockquote {
+  font-family: "Unit OT", sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--titles);
+  margin-bottom: 20px;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--texts);
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -512,6 +543,16 @@
   .tabslot__content--tutor .tab-testimonial {
     display: unset;
     width: 43%;
+  }
+  .tabslot__content--tutor .tab-testimonial .tab-testimonial__container {
+    width: 300px;
+  }
+  .tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div {
+    width: 210px;
+  }
+  .tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure blockquote {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 .tabslot__content--resources {
