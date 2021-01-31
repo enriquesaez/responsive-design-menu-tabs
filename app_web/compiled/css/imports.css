@@ -402,11 +402,59 @@
 .tabslot__content--classes {
   height: auto;
   min-height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+.tabslot__content--classes .tab-copy {
+  padding: 90px 90px 0 90px;
+}
+.tabslot__content--classes .tab-copy h1 {
+  font-family: "Unit OT", sans-serif;
+  font-size: 40px;
+  line-height: 46px;
+  color: var(--titles-bg);
+  margin: 60px 0 30px 0;
+}
+.tabslot__content--classes .tab-copy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--texts-bg);
+  margin-bottom: 26px;
+}
+.tabslot__content--classes .tab-media {
+  display: contents;
+  overflow: hidden;
+}
+.tabslot__content--classes .tab-media figure.desktop {
+  display: block;
+}
+.tabslot__content--classes .tab-media figure.mobile {
+  display: none;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .tabslot__content--classes {
-    min-height: 300px;
+  .tabslot__content--classes .tab-copy {
+    padding: 90px 34px 0 34px;
+    width: 57%;
+  }
+  .tabslot__content--classes .tab-media {
+    display: unset;
+    width: 43%;
+  }
+  .tabslot__content--classes .tab-media figure {
+    position: relative;
+    top: 3px;
+  }
+  .tabslot__content--classes .tab-media figure.desktop {
+    display: none;
+  }
+  .tabslot__content--classes .tab-media figure.mobile {
+    display: block;
   }
 }
 .tabslot__content--tutor {
