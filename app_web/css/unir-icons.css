@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "unir-icons";
+  src: url("../fonts/unir-icons/unir-icons.eot");
+  src: url("../fonts/unir-icons/unir-icons.eot#iefix") format("embedded-opentype"), url("../fonts/unir-icons/unir-icons.woff2") format("woff2"), url("../fonts/unir-icons/unir-icons.woff") format("woff"), url("../fonts/unir-icons/unir-icons.ttf") format("truetype"), url("../fonts/unir-icons/unir-icons.svg#unir-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'unir-icons';
+    src: url('../font/unir-icons.svg?61177780#unir-icons') format('svg');
+  }
+}
+*/
+[class^=unir-icon-]:before, [class*=" unir-icon-"]:before {
+  font-family: "unir-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.unir-icon-screen:before {
+  content: "";
+}
+
+.unir-icon-user:before {
+  content: "";
+}
+
+.unir-icon-diploma:before {
+  content: "";
+}
+
+.unir-icon-document:before {
+  content: "";
+}
+
+.unir-icon-faqs:before {
+  content: "";
+}
+
+.unir-icon-europe:before {
+  content: "";
+}
+
+.unir-icon-badge:before {
+  content: "";
+}
+
+.unir-icon-shadowing:before {
+  content: "";
+}
+
+.unir-icon-comment:before {
+  content: "";
+}
+
+.unir-icon-certificate:before {
+  content: "";
+}
+
+.unir-icon-professor:before {
+  content: "";
+}
+
+.unir-icon-trophy:before {
+  content: "";
+}
+
+.unir-icon-percentage:before {
+  content: "";
+}
+
+.unir-icon-mentor:before {
+  content: "";
+}
+
+.unir-icon-compass:before {
+  content: "";
+}
+
+.unir-icon-suitcase:before {
+  content: "";
+}
+
+.unir-icon-graduation-cap:before {
+  content: "";
+}
+
+.unir-icon-quotes:before {
+  content: "";
+}
+
+.unir-icon-globe:before {
+  content: "";
+}
+
+.unir-icon-alerts:before {
+  content: "";
+}
+
+.unir-icon-flow:before {
+  content: "";
+}
+
+.unir-icon-proeduca:before {
+  content: "";
+}
+
+.unir-icon-world:before {
+  content: "";
+}
+
+.unir-icon-mx:before {
+  content: "";
+}
+
+.unir-icon-map-marker:before {
+  content: "";
+}
+
+.unir-icon-schedule:before {
+  content: "";
+}
+
+.unir-icon-chart:before {
+  content: "";
+}
+
+.unir-icon-gear:before {
+  content: "";
+}
+
+.unir-icon-ects:before {
+  content: "";
+}
+
+.unir-icon-network:before {
+  content: "";
+}
+
+.unir-icon-bulb:before {
+  content: "";
+}
+
+.unir-icon-play-square:before {
+  content: "";
+}
+
+.unir-icon-conferences:before {
+  content: "";
+}
+
+.unir-icon-ranking:before {
+  content: "";
+}
+
+.unir-icon-dot-solid:before {
+  content: "";
+}
+
+.unir-icon-check:before {
+  content: "";
+}
+
+.unir-icon-map-marker-rounded:before {
+  content: "";
+}
+
+.unir-icon-dot:before {
+  content: "";
+}
+
+.unir-icon-google-plus:before {
+  content: "";
+}
+
+.unir-icon-map-marker-solid:before {
+  content: "";
+}
+
+.unir-icon-skype:before {
+  content: "";
+}
+
+.unir-icon-youtube:before {
+  content: "";
+}
+
+.unir-icon-linkedin:before {
+  content: "";
+}
+
+.unir-icon-instagram:before {
+  content: "";
+}
+
+.unir-icon-twitter:before {
+  content: "";
+}
+
+.unir-icon-play:before {
+  content: "";
+}
+
+.unir-icon-facebook:before {
+  content: "";
+}
+
+.unir-icon-external:before {
+  content: "";
+}
+
+.unir-icon-close:before {
+  content: "";
+}
+
+.unir-icon-search:before {
+  content: "";
+}
+
+.unir-icon-mail:before {
+  content: "";
+}
+
+.unir-icon-whatsapp:before {
+  content: "";
+}
+
+.unir-icon-form:before {
+  content: "";
+}
+
+.unir-icon-user-solid:before {
+  content: "";
+}
+
+.unir-icon-phone:before {
+  content: "";
+}
+
+.unir-icon-angle-right:before {
+  content: "";
+}
+
+.unir-icon-angle-left:before {
+  content: "";
+}
+
+.unir-icon-angle-up:before {
+  content: "";
+}
+
+.unir-icon-angle-down:before {
+  content: "";
+}
+
+.unir-icon-download:before {
+  content: "";
+}
+
+.unir-icon-attention:before {
+  content: "";
+}
+
+.unir-icon-bar-chart:before {
+  content: "";
+}
+
+.unir-icon-suitcase-solid:before {
+  content: "";
+}
+
+.unir-icon-user-female-solid:before {
+  content: "";
+}
+
+.unir-icon-calendar:before {
+  content: "";
+}
+
+.unir-icon-list:before {
+  content: "";
+}
+
+.unir-icon-plus:before {
+  content: "";
+}
+
+.unir-icon-minus:before {
+  content: "";
+}
+
+.unir-icon-tag:before {
+  content: "";
+}
