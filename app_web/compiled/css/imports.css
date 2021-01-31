@@ -460,11 +460,58 @@
 .tabslot__content--tutor {
   height: auto;
   min-height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+}
+.tabslot__content--tutor .tab-copy {
+  padding: 90px 90px 0 90px;
+}
+.tabslot__content--tutor .tab-copy h1 {
+  font-family: "Unit OT", sans-serif;
+  font-size: 40px;
+  line-height: 46px;
+  color: var(--titles-bg);
+  margin: 60px 0 30px 0;
+}
+.tabslot__content--tutor .tab-copy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--texts-bg);
+  margin-bottom: 26px;
+}
+.tabslot__content--tutor .tab-testimonial {
+  background-color: var(--titles-bg);
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container {
+  width: 602px;
+  height: 563px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container figure {
+  width: 430px;
+  height: auto;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .tabslot__content--tutor {
-    min-height: 300px;
+  .tabslot__content--tutor .tab-copy {
+    padding: 90px 34px 0 34px;
+    width: 57%;
+  }
+  .tabslot__content--tutor .tab-testimonial {
+    display: unset;
+    width: 43%;
   }
 }
 .tabslot__content--resources {
