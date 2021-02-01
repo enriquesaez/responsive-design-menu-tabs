@@ -45,5 +45,6 @@ html body .app__container.mobile {
     display: block;
     background-color: var(--secondary);
     padding: 20px;
+    height: 100vh;
   }
 }

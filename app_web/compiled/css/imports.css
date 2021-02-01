@@ -399,6 +399,23 @@
     top: 3px;
   }
 }
+@media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
+  .tabslot__content--methodology .tab-copy {
+    padding: 0;
+    width: 100%;
+  }
+  .tabslot__content--methodology .tab-copy h1 {
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  .tabslot__content--methodology .tab-copy p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+}
 .tabslot__content--classes {
   height: auto;
   min-height: 300px;
