@@ -5,7 +5,7 @@ html {
   body {
     .app__container {
       margin: 0 auto;
-      width: 1263px;
+      width: 1263px;      
       &.mobile {
         display: none;
       }
@@ -41,7 +41,7 @@ html {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
   html {
     body {
       .app__container {
@@ -52,6 +52,8 @@ html {
       .app__container {
         &.mobile {
           display: block;
+          background-color: var(--secondary);
+          padding: 20px;
         }
       }      
     }
