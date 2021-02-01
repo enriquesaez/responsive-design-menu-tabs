@@ -508,7 +508,7 @@
   display: -webkit-flex;
   flex-direction: column;
 }
-.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure i {
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure .unir-icon-quotes {
   color: var(--primary);
   font-size: 22px;
   z-index: 1;
@@ -533,8 +533,16 @@
   font-size: 14px;
   line-height: 24px;
   color: var(--texts);
+  cursor: pointer;
+  outline: none;
+}
+.tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div footer .unir-icon-play {
+  color: var(--primary);
+  font-size: 14px;
+  margin-right: 14px;
 }
 
+/* ELLIPSIS MULTILINEA */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .tabslot__content--tutor .tab-copy {
     padding: 90px 34px 0 34px;
@@ -551,8 +559,21 @@
     width: 210px;
   }
   .tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure blockquote {
-    font-size: 20px;
+    font-size: 26px;
     line-height: 26px;
+    display: block;
+    display: -webkit-box;
+    font-size: 20px;
+    line-height: 1.4;
+    max-height: 168px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+  .tabslot__content--tutor .tab-testimonial .tab-testimonial__container > div figure blockquote blockquote:not(:first-of-type) {
+    display: none;
   }
 }
 .tabslot__content--resources {

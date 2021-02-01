@@ -45,7 +45,7 @@
           display: flex;
           display: -webkit-flex;
           flex-direction: column;
-          i {
+          .unir-icon-quotes {
             color: var(--primary);
             font-size: 22px;
             z-index: 1;
@@ -71,9 +71,35 @@
           font-size: 14px;
           line-height: 24px;
           color: var(--texts);
+          cursor: pointer;
+          outline: none;
+          .unir-icon-play {
+            color: var(--primary);
+            font-size: 14px;
+            margin-right: 14px;
+          }
         }
       }
     }
+  }
+}
+
+/* ELLIPSIS MULTILINEA */
+@mixin ellipsis-multiline($font-size, $line-height, $lines-to-show, $margin:"0") {
+  $height-calc: $font-size*$line-height*$lines-to-show;
+  display: block;
+  display: -webkit-box;
+  font-size: $font-size*1px;
+  line-height: $line-height;
+  max-height: ($height-calc + $margin)*1px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+
+  blockquote:not(:first-of-type) {
+    display: none;
   }
 }
 
@@ -92,8 +118,9 @@
           width: 210px;
           figure {
             blockquote {
-              font-size: 20px;
+              font-size: 26px;
               line-height: 26px;
+              @include ellipsis-multiline(20,1.4,6,0);
             }
           }
         }
