@@ -3,11 +3,17 @@ html body .app__container {
   margin: 0 auto;
   width: 1263px;
 }
+html body .app__container.mobile {
+  display: none;
+}
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
   html body .app__container {
     margin: 0 auto;
     width: 100%;
+  }
+  html body .app__container.mobile {
+    display: none;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -15,9 +21,15 @@ html body .app__container {
     margin: 0 auto;
     width: 100%;
   }
+  html body .app__container.mobile {
+    display: none;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   html body .app__container.desktop {
     display: none;
+  }
+  html body .app__container.mobile {
+    display: block;
   }
 }

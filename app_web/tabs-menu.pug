@@ -5,6 +5,8 @@ html(lang='en')
   body
     section.app__container.desktop
       include components/c-tabs-unir/c-tabs-unir.pug
+    section.app__container.mobile
+      include components/c-dropdown/c-dropdown.pug      
     script.
         function openContent(evt, elementName) {
         var i, tabslot, tablinks;
@@ -20,5 +22,16 @@ html(lang='en')
         evt.currentTarget.className += " active";
         }
     script.
-        // Active element on click by default:
         document.getElementById("defaultOpen").click();
+    script.
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+        }
+        }    
