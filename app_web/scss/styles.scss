@@ -50,6 +50,17 @@ html {
         }
       }
       .app__container {
+        width: 100%;
+        box-sizing: border-box;
+        .dropdown-container {
+          display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          justify-content: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          margin-bottom: 48px;
+        }
         &.mobile {
           display: block;
           background-color: var(--secondary);

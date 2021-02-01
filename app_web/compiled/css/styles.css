@@ -29,6 +29,18 @@ html body .app__container.mobile {
   html body .app__container.desktop {
     display: none;
   }
+  html body .app__container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  html body .app__container .dropdown-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    margin-bottom: 48px;
+  }
   html body .app__container.mobile {
     display: block;
     background-color: var(--secondary);
